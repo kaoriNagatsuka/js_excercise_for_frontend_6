@@ -36,13 +36,13 @@
   //   - 引数で受け取ったtodoをそのまま返す
   const validateTodo = (todo) => {
     if (!todo) {
-      throw Error('何も入力されていません');
+      throw new Error('何も入力されていません');
     }
     const sameTodo = todos.filter(_todo => {
       return _todo === todo;
     });
     if (sameTodo.length > 0) {
-      throw Error('同じ名前のタスクは既に作成されています');
+      throw new Error('同じ名前のタスクは既に作成されています');
     }
     return todo;
   };
