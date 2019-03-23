@@ -148,5 +148,4 @@
   addButton.addEventListener('click', (event) => {
     promiseTaskOfAddingTodo();
   });
-
 })();
